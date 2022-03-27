@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Area and Perimeter, with JavaScript" />
+    <meta name="description" content="Area with JavaScript" />
     <meta name="keywords" content="immaculata, ics2o" />
     <meta name="author" content="Samuel Carlson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,48 +21,44 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Area and Perimeter, with JS</span>
+          <span class="mdl-layout-title">Area with JS</span>
         </div>
       </header>
       <main class="mdl-layout__content">
         <table>
           <tr>
             <th>
-              <img src="./images/rectangle.jpg" alt="rectangle" width="75%" height="auto"/>
-            </th>
-            <th>
               <h2>Formulas</h2>
-              <h3>A = L x W</h3>
-              <h3>P = 2 x (L + W)</h3>
+              <h3>A = B x H / 2</h3>
             </th>
           </tr>
         </table>
         <!-- Simple Textfield -->
         <form action="#">
-          <p>Length</p>
+          <p>Base</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="length-of-rectangle"
+              id="base-of-triangle"
             />
-            <label class="mdl-textfield__label" for="length-of-rectangle">length ...</label>
+            <label class="mdl-textfield__label" for="base-of-triangle">base ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
 				
         <!-- Numeric Textfield -->
         <form action="#">
-          <p>Width</p>
+          <p>Height</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="width-of-rectangle"
+              id="height-of-triangle"
             />
-            <label class="mdl-textfield__label" for="width-of-rectangle">width ...</label>
+            <label class="mdl-textfield__label" for="height-of-triangle">height ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
@@ -78,7 +74,6 @@
         <p>
           <div id="answers">
             <div id="area"></div>
-            <div id="perimeter"></div>
           </div>
         </p>
       </main>
